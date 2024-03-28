@@ -29,7 +29,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/appointment/getall",
+          "https://awful-crab-cape.cyclic.app/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -41,7 +41,7 @@ const Dashboard = () => {
     const fetchDoctorsCount = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/doctors",
+          "https://awful-crab-cape.cyclic.app/api/v1/user/doctors",
           { withCredentials: true }
         );
         setDoctorsCount(data.doctors.length); // Set the count of doctors
@@ -58,7 +58,7 @@ const Dashboard = () => {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:4000/api/v1/appointment/update/${appointmentId}`,
+        `https://awful-crab-cape.cyclic.app/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );

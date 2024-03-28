@@ -16,7 +16,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/message/send",
+          "https://awful-crab-cape.cyclic.app/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,
