@@ -11,7 +11,7 @@ const Messages = () => {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          "https://awful-crab-cape.cyclic.app/api/v1/message/getall",
+          "https://hms-7eui.onrender.com/api/v1/message/getall",
           { withCredentials: true }
         );
         setMessages(data.messages);

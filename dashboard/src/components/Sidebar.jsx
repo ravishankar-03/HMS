@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("https://awful-crab-cape.cyclic.app/api/v1/user/admin/logout", {
+      .get("https://hms-7eui.onrender.com/api/v1/user/admin/logout", {
         withCredentials: true,
       })
       .then((res) => {

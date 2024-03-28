@@ -60,7 +60,7 @@ const AddNewDoctor = () => {
       formData.append("doctorDepartment", doctorDepartment);
       formData.append("docAvatar", docAvatar);
       await axios
-        .post("https://awful-crab-cape.cyclic.app/api/v1/user/doctor/addnew", formData, {
+        .post("https://hms-7eui.onrender.com/api/v1/user/doctor/addnew", formData, {
           withCredentials: true,
           headers: { "Content-Type": "multipart/form-data" },
         })

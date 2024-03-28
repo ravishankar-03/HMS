@@ -25,7 +25,7 @@ const Register = () => {
     try {
       await axios
         .post(
-          "https://awful-crab-cape.cyclic.app/api/v1/user/patient/register",
+          "https://hms-7eui.onrender.com/api/v1/user/patient/register",
           { firstName, lastName, email, phone, nic, dob, gender, password },
           {
             withCredentials: true,

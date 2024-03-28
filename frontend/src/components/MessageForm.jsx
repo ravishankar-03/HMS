@@ -16,7 +16,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "https://awful-crab-cape.cyclic.app/api/v1/message/send",
+          "https://hms-7eui.onrender.com/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,

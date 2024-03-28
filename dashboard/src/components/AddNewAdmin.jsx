@@ -25,7 +25,7 @@ const AddNewAdmin = () => {
     try {
       await axios
         .post(
-          "https://awful-crab-cape.cyclic.app/api/v1/user/admin/addnew",
+          "https://hms-7eui.onrender.com/api/v1/user/admin/addnew",
           { firstName, lastName, email, phone, nic, dob, gender, password },
           {
             withCredentials: true,

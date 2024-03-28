@@ -20,7 +20,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "https://awful-crab-cape.cyclic.app/api/v1/user/login",
+          "https://hms-7eui.onrender.com/api/v1/user/login",
           { email, password, confirmPassword, role: "Patient" },
           {
             withCredentials: true,

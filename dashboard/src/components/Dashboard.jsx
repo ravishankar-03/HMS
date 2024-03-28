@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Context } from "../main";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
@@ -14,7 +14,7 @@ const Dashboard = () => {
   //   const fetchAppointments = async () => {
   //     try {
   //       const { data } = await axios.get(
-  //         "http://localhost:4000/api/v1/appointment/getall",
+  //         "https://hms-7eui.onrender.com/api/v1/appointment/getall",
   //         { withCredentials: true }
   //       );
   //       setAppointments(data.appointments);
@@ -29,7 +29,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "https://awful-crab-cape.cyclic.app/api/v1/appointment/getall",
+          "https://hms-7eui.onrender.com/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -41,7 +41,7 @@ const Dashboard = () => {
     const fetchDoctorsCount = async () => {
       try {
         const { data } = await axios.get(
-          "https://awful-crab-cape.cyclic.app/api/v1/user/doctors",
+          "https://hms-7eui.onrender.com/api/v1/user/doctors",
           { withCredentials: true }
         );
         setDoctorsCount(data.doctors.length); // Set the count of doctors
@@ -58,7 +58,7 @@ const Dashboard = () => {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `https://awful-crab-cape.cyclic.app/api/v1/appointment/update/${appointmentId}`,
+        `https://hms-7eui.onrender.com/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );
