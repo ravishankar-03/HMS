@@ -20,12 +20,7 @@ app.use(
   })
 );
 
-app.use(cookieParser(
-  {
-  sameSite: 'none', // Set to 'none' for cross-origin requests
-  secure: true, // Required for secure (HTTPS) connections
-  }
-));
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
